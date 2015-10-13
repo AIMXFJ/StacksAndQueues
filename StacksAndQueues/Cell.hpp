@@ -6,7 +6,7 @@
  * There are no destroyers. Should we use them? */
 class Cell
 {
-int element; //where the value actually is
+    int element; //where the value actually is
     Cell *next; //pointer to next value
   public:
     Cell(int, Cell*);//creates element

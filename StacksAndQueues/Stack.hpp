@@ -16,7 +16,7 @@ public:
     int top(void);
     void push(int);
     int pop(void);
-    void makeNull(void);
+    //void makeNull(void);
 };
 
 #endif // STACK_HPP

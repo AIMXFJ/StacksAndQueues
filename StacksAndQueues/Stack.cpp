@@ -44,12 +44,12 @@ int Stack::pop()
         return value;
     }
 }
-
-void Stack::makeNull()
+//We probably won't be using this
+/*void Stack::makeNull()
 {
     int aux=0;
     while (aux!=NULL){
         aux=pop();
     }
-}
+}*/
 
