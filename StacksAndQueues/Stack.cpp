@@ -23,7 +23,6 @@ bool Stack::empty()
 void Stack::push(int value)
 {
     Cell* newElement = new Cell(value,NULL);
-    //newElement->setElement(value);
     if (stack!=NULL) {
         newElement->setNext(stack);
     }

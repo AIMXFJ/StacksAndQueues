@@ -9,7 +9,6 @@ class Stack
 {
 public:
     Cell *stack;//current last value pushed
-    Cell *newElement;//idem
   public:
     Stack(void); //constructor of empty stack (NULL top)
     bool empty(void);
