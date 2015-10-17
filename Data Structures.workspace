@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Data Structures" Database="">
-  <Project Name="StacksAndQueues" Path="StacksAndQueues/StacksAndQueues.project" Active="Yes"/>
+  <Project Name="StacksAndQueues" Path="StacksAndQueues/StacksAndQueues.project" Active="No"/>
+  <Project Name="FirstAssignment" Path="FirstAssignment/FirstAssignment.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="StacksAndQueues" ConfigName="Debug"/>
+      <Project Name="FirstAssignment" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="StacksAndQueues" ConfigName="Release"/>
+      <Project Name="FirstAssignment" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
