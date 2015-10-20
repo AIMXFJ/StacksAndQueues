@@ -15,7 +15,7 @@ bool Queue::empty()
     else return false;
 }
 
-int Queue::exit()
+int Queue::giveFront()
 {
     return this->front->getElement(); 
 }
@@ -34,11 +34,13 @@ void Queue::enqueue(int e)
 
 int Queue::dequeue()
 {
-    if (this->front==this->rear) {
+    if (this->empty()) std::cout << "I am empty";
+    else if (this->front==this->rear) {
         int auxe;
         auxe = this->front->getElement();
         delete(this->front);
-        makeNull();
+        this->front = NULL;
+        this->rear = NULL;
         return auxe;
     } else {
         Cell* auxc;
@@ -51,8 +53,16 @@ int Queue::dequeue()
     }
 }
 
-void Queue::makeNull()
+void Queue::listQueue()
 {
-    this->front = NULL;
-    this->rear = NULL;
+    if (this->empty()) std::cout << "I am empty";
+    else {
+        Cell* aux;
+        aux = this->front;
+        while (aux!=this->rear) { //print everything by iterating with aux
+            std::cout << aux->getElement() << ' '; //let's print a space between numbers
+            aux = aux->getNext();
+        }
+        std::cout << this->rear->getElement(); //won't print rear, so print it manually
+    }
 }
