@@ -31,8 +31,9 @@ void Stack::push(int value)
 
 int Stack::pop()
 {
-    if (top==NULL) {
+    if (this->empty()) {
         std::cout << "I am empty";
+        return 0;
     } else {
         Cell* aux;
         int value;
