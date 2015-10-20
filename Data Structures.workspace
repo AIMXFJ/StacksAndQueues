@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Data Structures" Database="">
-  <Project Name="StacksAndQueues" Path="StacksAndQueues/StacksAndQueues.project" Active="No"/>
-  <Project Name="FirstAssignment" Path="FirstAssignment/FirstAssignment.project" Active="Yes"/>
+  <Project Name="StacksAndQueues" Path="StacksAndQueues/StacksAndQueues.project" Active="Yes"/>
+  <Project Name="FirstAssignment" Path="FirstAssignment/FirstAssignment.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="StacksAndQueues" ConfigName="Debug"/>

@@ -8,14 +8,13 @@
 class Stack
 {
 public:
-    Cell *stack;//current last value pushed
+    Cell *top;//current last value pushed
   public:
     Stack(void); //constructor of empty stack (NULL top)
     bool empty(void);
-    int top(void);
+    int giveTop(void);
     void push(int);
     int pop(void);
-    //void makeNull(void);
 };
 
 #endif // STACK_HPP

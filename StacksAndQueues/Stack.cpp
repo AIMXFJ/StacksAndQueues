@@ -5,17 +5,17 @@
 
 Stack::Stack()
 {
-    this->stack = NULL;
+    this->top = NULL;
 }
 
-int Stack::top()
+int Stack::giveTop()
 {
-    return this->stack->getElement();
+    return this->top->getElement();
 }
 
 bool Stack::empty()
 {
-    if (stack==NULL) {
+    if (top==NULL) {
         return true;
     } else return false;
 }
@@ -23,32 +23,24 @@ bool Stack::empty()
 void Stack::push(int value)
 {
     Cell* newElement = new Cell(value,NULL);
-    if (stack!=NULL) {
-        newElement->setNext(stack);
+    if (top!=NULL) {
+        newElement->setNext(top);
     }
-    this->stack = newElement;
+    this->top = newElement;
 }
 
 int Stack::pop()
 {
-    if (stack==NULL) {
+    if (top==NULL) {
         std::cout << "I am empty";
     } else {
         Cell* aux;
         int value;
-        aux=this->stack;
-        this->stack = this->stack->getNext();
+        aux=this->top;
+        this->top = this->top->getNext();
         value=aux->getElement();
         delete(aux);
         return value;
     }
 }
-//We probably won't be using this
-/*void Stack::makeNull()
-{
-    int aux=0;
-    while (aux!=NULL){
-        aux=pop();
-    }
-}*/
 

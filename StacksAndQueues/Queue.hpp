@@ -13,10 +13,10 @@ public:
 public:
     Queue(); //empty queue, null front + rear
     bool empty();
-    int exit();
+    int giveFront();
     void enqueue(int);
     int dequeue();
-    void makeNull();
+    void listQueue();
 
 };
 
