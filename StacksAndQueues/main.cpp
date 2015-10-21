@@ -15,6 +15,7 @@ int main()
     Queue* queueNeg = new Queue();
     int choice = 0; //variable to choose option. Options are 1-5 so we start on 0
     //here we should call fileManager to read file, but it's not implemented yet!
+    int aux=0;
     //now we enter menu loop!
     do
     {
@@ -33,10 +34,11 @@ int main()
                 getch();
                 break; //mandatory in switches and breaks my heart
             case 2:
-                if(stackOdd->pop()==0){
+                aux = stackOdd->pop();
+                if(aux==666){
                     std::cout << "I am empty";
                 }else{
-                    std::cout << stackOdd->pop();
+                    std::cout << aux;
                 }
                 getch();
                 break;

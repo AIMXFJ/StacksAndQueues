@@ -32,7 +32,7 @@ void Stack::push(int value)
 int Stack::pop()
 {
     if (this->empty()) {
-        return 0;
+        return 666;
     } else {
         Cell* aux;
         int value;
