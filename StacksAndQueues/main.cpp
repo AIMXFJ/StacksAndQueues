@@ -33,7 +33,11 @@ int main()
                 getch();
                 break; //mandatory in switches and breaks my heart
             case 2:
-                std::cout << stackOdd->pop();
+                if(stackOdd->pop()==0){
+                    std::cout << "I am empty";
+                }else{
+                    std::cout << stackOdd->pop();
+                }
                 getch();
                 break;
             case 3:
