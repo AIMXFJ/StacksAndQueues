@@ -12,7 +12,7 @@ class FileIO
 public:
     FileIO();
     void readFile(Stack&, Queue&, Queue&);
-    void writeFile(Stack, Queue, Queue);
+    void writeFile(Stack*, Queue*, Queue*);
 };
 
 #endif // FILEIO_HPP

@@ -6,16 +6,29 @@
 #include "Cell.hpp"
 #include "FileIO.hpp" //do we need to declare all this? woah
 
+//declaration of objects to be used. They're global!
+Stack* stackOdd = new Stack();
+Queue* queueEven = new Queue();
+Queue* queueNeg = new Queue();
+
+void processNumber(int num) {
+    //Decides where to store a number
+    if (num<0) { //if negative
+        queueNeg->enqueue(num); //goes to neg queue
+    } else if ((num%2)==0) { //if even (0 counts)
+        queueEven->enqueue(num); //goes to even queue
+        } else { //else odd
+            stackOdd->push(num);
+        }
+}
+
 int main()
 {
-    //declaration of objects to be used
-	FileIO* fileManager = new FileIO();
-    Stack* stackOdd = new Stack();
-    Queue* queueEven = new Queue();
-    Queue* queueNeg = new Queue();
+    FileIO* fileManager = new FileIO(); //declare file manager 
     int choice = 0; //variable to choose option. Options are 1-5 so we start on 0
     //here we should call fileManager to read file, but it's not implemented yet!
-    int aux=0;
+    int aux=0; //aux for checks
+    int numAux; //aux to read numbers
     //now we enter menu loop!
     do
     {
@@ -30,12 +43,15 @@ int main()
         switch (choice)
         {
             case 1:
-                std::cout << "You chose 1. Not implemented.";
+                std::cout << "Write the number to process\n";
+                std::cin >> numAux;
+                processNumber(numAux);
+                std::cout << "\nDone!";
                 getch();
                 break; //mandatory in switches and breaks my heart
             case 2:
                 aux = stackOdd->pop();
-                if(aux==666){
+                if(aux==666){ //this is an even number to check if empty, it won't be in the stack
                     std::cout << "I am empty";
                 }else{
                     std::cout << aux;
@@ -51,7 +67,7 @@ int main()
                 getch();
                 break;
             case 5:
-                //call writeFile
+                fileManager->writeFile(stackOdd, queueEven, queueNeg);
                 break; 
             default:
                 std::cout << "Not a valid option. Try again.";

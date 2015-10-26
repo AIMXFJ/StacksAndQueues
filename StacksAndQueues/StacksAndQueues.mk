@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=StacksAndQueues
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\AIMX\Desktop\1stAssignment Data\StacksAndQueues"
-ProjectPath            := "C:\Users\AIMX\Desktop\1stAssignment Data\StacksAndQueues\StacksAndQueues"
+WorkspacePath          := "C:\Users\Beatriz\Documents\GitHub\StacksAndQueues"
+ProjectPath            := "C:\Users\Beatriz\Documents\GitHub\StacksAndQueues\StacksAndQueues"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AIMX
-Date                   :=20/10/2015
+User                   :=Beatriz
+Date                   :=26/10/2015
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/AIMX/Desktop/1stAssignment Data/StacksAndQueues/StacksAndQueues/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Beatriz/Documents/GitHub/StacksAndQueues/StacksAndQueues/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
@@ -102,7 +102,7 @@ $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
 $(IntermediateDirectory)/Cell.cpp$(ObjectSuffix): Cell.cpp $(IntermediateDirectory)/Cell.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/AIMX/Desktop/1stAssignment Data/StacksAndQueues/StacksAndQueues/Cell.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Cell.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Beatriz/Documents/GitHub/StacksAndQueues/StacksAndQueues/Cell.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Cell.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Cell.cpp$(DependSuffix): Cell.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Cell.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Cell.cpp$(DependSuffix) -MM "Cell.cpp"
 
@@ -110,7 +110,7 @@ $(IntermediateDirectory)/Cell.cpp$(PreprocessSuffix): Cell.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Cell.cpp$(PreprocessSuffix) "Cell.cpp"
 
 $(IntermediateDirectory)/Queue.cpp$(ObjectSuffix): Queue.cpp $(IntermediateDirectory)/Queue.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/AIMX/Desktop/1stAssignment Data/StacksAndQueues/StacksAndQueues/Queue.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Queue.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Beatriz/Documents/GitHub/StacksAndQueues/StacksAndQueues/Queue.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Queue.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Queue.cpp$(DependSuffix): Queue.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Queue.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Queue.cpp$(DependSuffix) -MM "Queue.cpp"
 
@@ -118,7 +118,7 @@ $(IntermediateDirectory)/Queue.cpp$(PreprocessSuffix): Queue.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Queue.cpp$(PreprocessSuffix) "Queue.cpp"
 
 $(IntermediateDirectory)/Stack.cpp$(ObjectSuffix): Stack.cpp $(IntermediateDirectory)/Stack.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/AIMX/Desktop/1stAssignment Data/StacksAndQueues/StacksAndQueues/Stack.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Stack.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Beatriz/Documents/GitHub/StacksAndQueues/StacksAndQueues/Stack.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Stack.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Stack.cpp$(DependSuffix): Stack.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Stack.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Stack.cpp$(DependSuffix) -MM "Stack.cpp"
 
@@ -126,7 +126,7 @@ $(IntermediateDirectory)/Stack.cpp$(PreprocessSuffix): Stack.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Stack.cpp$(PreprocessSuffix) "Stack.cpp"
 
 $(IntermediateDirectory)/FileIO.cpp$(ObjectSuffix): FileIO.cpp $(IntermediateDirectory)/FileIO.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/AIMX/Desktop/1stAssignment Data/StacksAndQueues/StacksAndQueues/FileIO.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FileIO.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Beatriz/Documents/GitHub/StacksAndQueues/StacksAndQueues/FileIO.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FileIO.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/FileIO.cpp$(DependSuffix): FileIO.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/FileIO.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/FileIO.cpp$(DependSuffix) -MM "FileIO.cpp"
 
