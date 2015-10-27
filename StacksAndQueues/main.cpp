@@ -34,7 +34,7 @@ int main()
             case 1:
                 std::cout << "Write the number to process\n";
                 std::cin >> numAux;
-                fileManager->processNumber(numAux, stackOdd ,queueEven ,queueEven);
+                fileManager->processNumber(numAux, stackOdd ,queueEven ,queueNeg);
                 std::cout << "\nDone!";
                 getch();
                 break; //mandatory in switches and breaks my heart

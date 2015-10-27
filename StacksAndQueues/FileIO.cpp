@@ -11,7 +11,7 @@ FileIO::FileIO() //Does this really do anything?
 {
 }
 
-void processNumber(int num, Stack *stackOdd, Queue *queueEven, Queue *queueNeg) {
+void processNumber(int num, Stack* stackOdd, Queue* queueEven, Queue* queueNeg) {
     //Decides where to store a number
     if (num<0) { //if negative
         queueNeg->enqueue(num); //goes to neg queue
@@ -22,25 +22,27 @@ void processNumber(int num, Stack *stackOdd, Queue *queueEven, Queue *queueNeg) 
         }
 }
 
-void FileIO::readFile(Stack *stackOdd, Queue *queueEven, Queue *queueNeg) 
-{ //we're modifiyng these, so we pass by reference
-    ofstream myReadFile;
+void FileIO::readFile(Stack* stackOdd, Queue* queueEven, Queue* queueNeg) 
+{ 
+    ifstream myReadFile;
     myReadFile.open("input.numbers.txt");
     char check='a';
     int num;
     if (myReadFile.is_open()) {
-        do{ 
-            myReadFile >> num; //reads int. Will read all digits until a ,
-            processNumber(num, stackOdd, queueEven, queueEven);
-            myReadFile.get(check); //gets char to check if '.' (doesn't print ',')
-            std::cout << num << ' '; //print whole number. We'll just process the read number later
-        } while (check!='.');
+        for (int i=1;i<=3;i++) { //do it three times
+            check='a'; //reset check so it won't see a '.'
+            do{ 
+                myReadFile >> num; //reads int. Will read all digits until a ','
+                this->processNumber(num, stackOdd, queueEven, queueNeg);
+                myReadFile.get(check); //gets char to check if '.' (doesn't print ',')
+                std::cout << num << ' '; //print whole number. We'll just process the read number later
+            } while (check!='.');
+        }
     } else { //let's keep this check just in case
         std::cout << "File couldn't open. Aborting\n";
         return;
     }
     myReadFile.close();
-    return;
 }
 
 void FileIO::writeFile(Stack* stackOdd, Queue* queueEven, Queue* queueNeg)
