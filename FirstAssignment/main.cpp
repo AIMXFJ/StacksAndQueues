@@ -18,9 +18,9 @@ int main () {
 	int num;
     if (myReadFile.is_open()) {
         do {
-			myReadFile >> num; //reads int. Will read all digits until a ,
-			myReadFile.get(check); //gets char to check if '.' (doesn't print ',')
-			std::cout << num << ' '; //print WHOLE number. We'll just process the read number later
+			myReadFile >> num;
+			myReadFile.get(check);
+			std::cout << num << ' '; 
 		} while (check!='.');
     } else { //let's keep this check just in case
 		std::cout << "File couldn't open. Aborting\n";

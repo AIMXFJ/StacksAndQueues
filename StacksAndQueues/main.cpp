@@ -11,17 +11,6 @@ Stack* stackOdd = new Stack();
 Queue* queueEven = new Queue();
 Queue* queueNeg = new Queue();
 
-void processNumber(int num) {
-    //Decides where to store a number
-    if (num<0) { //if negative
-        queueNeg->enqueue(num); //goes to neg queue
-    } else if ((num%2)==0) { //if even (0 counts)
-        queueEven->enqueue(num); //goes to even queue
-        } else { //else odd
-            stackOdd->push(num);
-        }
-}
-
 int main()
 {
     FileIO* fileManager = new FileIO(); //declare file manager 
@@ -45,13 +34,13 @@ int main()
             case 1:
                 std::cout << "Write the number to process\n";
                 std::cin >> numAux;
-                processNumber(numAux);
+                fileManager->processNumber(numAux, stackOdd ,queueEven ,queueEven);
                 std::cout << "\nDone!";
                 getch();
                 break; //mandatory in switches and breaks my heart
             case 2:
                 aux = stackOdd->pop();
-                if(aux==666){ //this is an even number to check if empty, it won't be in the stack
+                if(aux==0){ //this is an even number to check if empty, it won't be in the stack
                     std::cout << "I am empty";
                 }else{
                     std::cout << aux;

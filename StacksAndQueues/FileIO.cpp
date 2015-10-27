@@ -5,17 +5,42 @@
 #include <stdlib.h>
 #include <iostream>
 #include <fstream>
-#include <string>
-#include <conio.h>
 using namespace std;
 
 FileIO::FileIO() //Does this really do anything?
 {
 }
 
-void FileIO::readFile(Stack &stackOdd, Queue &queueEven, Queue &queueNeg) 
+void processNumber(int num, Stack *stackOdd, Queue *queueEven, Queue *queueNeg) {
+    //Decides where to store a number
+    if (num<0) { //if negative
+        queueNeg->enqueue(num); //goes to neg queue
+    } else if ((num%2)==0) { //if even (0 counts)
+        queueEven->enqueue(num); //goes to even queue
+        } else { //else odd
+            stackOdd->push(num);
+        }
+}
+
+void FileIO::readFile(Stack *stackOdd, Queue *queueEven, Queue *queueNeg) 
 { //we're modifiyng these, so we pass by reference
-    //add later
+    ofstream myReadFile;
+    myReadFile.open("input.numbers.txt");
+    char check='a';
+    int num;
+    if (myReadFile.is_open()) {
+        do{ 
+            myReadFile >> num; //reads int. Will read all digits until a ,
+            processNumber(num, stackOdd, queueEven, queueEven);
+            myReadFile.get(check); //gets char to check if '.' (doesn't print ',')
+            std::cout << num << ' '; //print whole number. We'll just process the read number later
+        } while (check!='.');
+    } else { //let's keep this check just in case
+        std::cout << "File couldn't open. Aborting\n";
+        return;
+    }
+    myReadFile.close();
+    return;
 }
 
 void FileIO::writeFile(Stack* stackOdd, Queue* queueEven, Queue* queueNeg)

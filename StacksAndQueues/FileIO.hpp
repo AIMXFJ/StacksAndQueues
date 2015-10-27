@@ -11,8 +11,9 @@ class FileIO
 {
 public:
     FileIO();
-    void readFile(Stack&, Queue&, Queue&);
+    void readFile(Stack*, Queue*, Queue*);
     void writeFile(Stack*, Queue*, Queue*);
+    void processNumber(int, Stack*, Queue*, Queue*);
 };
 
 #endif // FILEIO_HPP
