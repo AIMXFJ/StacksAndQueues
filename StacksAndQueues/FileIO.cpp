@@ -35,7 +35,6 @@ void FileIO::readFile(Stack* stackOdd, Queue* queueEven, Queue* queueNeg)
                 myReadFile >> num; //reads int. Will read all digits until a ','
                 this->processNumber(num, stackOdd, queueEven, queueNeg);
                 myReadFile.get(check); //gets char to check if '.' (doesn't print ',')
-                std::cout << num << ' '; //print whole number. We'll just process the read number later
             } while (check!='.');
         }
     } else { //let's keep this check just in case

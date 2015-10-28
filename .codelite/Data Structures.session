@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\Beatriz\Documents\GitHub\StacksAndQueues\Data Structures.workspace">
-  <int Value="1" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\Beatriz\Documents\GitHub\StacksAndQueues\Data Structures.workspace" Name="m_workspaceName"/>
+<Session Name="C:\Users\Beatriz\Documents\Data Structures\Data Structures.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\Beatriz\Documents\Data Structures\Data Structures.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\Beatriz\Documents\GitHub\StacksAndQueues\StacksAndQueues\main.cpp" Name="FileName"/>
-      <int Value="15" Name="FirstVisibleLine"/>
+      <wxString Value="C:\Users\Beatriz\Documents\Data Structures\StacksAndQueues\main.cpp" Name="FileName"/>
+      <int Value="21" Name="FirstVisibleLine"/>
+      <int Value="8" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Beatriz\Documents\Data Structures\StacksAndQueues\FileIO.cpp" Name="FileName"/>
+      <int Value="57" Name="FirstVisibleLine"/>
       <int Value="36" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Beatriz\Documents\GitHub\StacksAndQueues\StacksAndQueues\FileIO.cpp" Name="FileName"/>
-      <int Value="4" Name="FirstVisibleLine"/>
-      <int Value="34" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Beatriz\Documents\GitHub\StacksAndQueues\StacksAndQueues\FileIO.hpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="5" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
