@@ -11,7 +11,7 @@ FileIO::FileIO() //Does this really do anything?
 {
 }
 
-void processNumber(int num, Stack* stackOdd, Queue* queueEven, Queue* queueNeg) {
+void FileIO::processNumber(int num, Stack* stackOdd, Queue* queueEven, Queue* queueNeg) { //Lack of FileIO:: was the problem bro
     //Decides where to store a number
     if (num<0) { //if negative
         queueNeg->enqueue(num); //goes to neg queue

@@ -18,6 +18,7 @@ int main()
     //here we should call fileManager to read file, but it's not implemented yet!
     int aux=0; //aux for checks
     int numAux; //aux to read numbers
+    fileManager->readFile(stackOdd, queueEven, queueNeg); //Read file
     //now we enter menu loop!
     do
     {
