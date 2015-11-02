@@ -29,14 +29,12 @@ void FileIO::readFile(Stack* stackOdd, Queue* queueEven, Queue* queueNeg)
     char check='a';
     int num;
     if (myReadFile.is_open()) {
-        for (int i=1;i<=3;i++) { //do it three times
             check='a'; //reset check so it won't see a '.'
             do{ 
                 myReadFile >> num; //reads int. Will read all digits until a ','
                 this->processNumber(num, stackOdd, queueEven, queueNeg);
                 myReadFile.get(check); //gets char to check if '.' (doesn't print ',')
             } while (check!='.');
-        }
     } else { //let's keep this check just in case
         std::cout << "File couldn't open. Aborting\n";
         return;
